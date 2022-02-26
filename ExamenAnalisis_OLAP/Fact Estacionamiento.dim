@@ -1,0 +1,496 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f6ac57ef-b58c-46b2-b397-54d6aedfcc02" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Estacionamiento</ID>
+  <Name>Fact Estacionamiento</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="2278" scrolltop="-4662" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="7006" y="16320" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactEstacionamiento" left="20" top="2086" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="8424" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e820000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactEstacionamiento" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDiaFeriado" left="12156" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3090" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000120c00009b070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDiaFeriado" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimParqueo" left="2274" top="9486" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3916" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004c0f00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimParqueo" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimVehiculo" left="10844" top="4347" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="5715" height="4826" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000053160000da120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimVehiculo" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8144" top="5936" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="1224" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FactEstacionamiento-DimVehiculo]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="30" destattachpoint="45" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10844" y="6760" />
+              <point x="9644" y="6760" />
+              <point x="9644" y="6236" />
+              <point x="8444" y="6236" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3833" top="6786" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FactEstacionamiento-DimParqueo]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="6" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4232" y="9486" />
+              <point x="4232" y="7086" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8144" top="574" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="4312" height="4862" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FactEstacionamiento-DimDiaFeriado]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="12" destattachpoint="41" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12156" y="973" />
+              <point x="10300" y="973" />
+              <point x="10300" y="5136" />
+              <point x="8444" y="5136" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8144" top="24" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="4312" height="3212" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FactEstacionamiento-DimDiaFeriado1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="10" destattachpoint="33" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12156" y="423" />
+              <point x="10300" y="423" />
+              <point x="10300" y="2936" />
+              <point x="8444" y="2936" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13302" top="1448" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[DimVehiculo-DimDiaFeriado]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="5" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13701" y="1947" />
+              <point x="13701" y="4347" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>2278</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4662</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ec9b2666-87b9-4666-9631-c2913407ee85">
+    <DataSourceViewID>DW Examen Analisis</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="d7a7f012-5182-4e0d-9969-9e9c6bd4845c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="26d876ef-cff1-4a4b-a5ac-15571ef0dad2">
+      <ID>Indicador Automovil Entrada</ID>
+      <Name>Indicador Automovil Entrada</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2d180d9a-f1a7-4214-bfeb-396e9e852e40">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="003155f0-5871-4cab-b7ae-4c5108df288c">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorAutomovilEntrada</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0d0a5845-2c87-460b-b4a6-24f216cff64f">
+          <AttributeID>Indicador Automovil Salida</AttributeID>
+          <Name>Indicador Automovil Salida</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bd8a1874-a486-4a0e-a6a7-46fb14ad49aa">
+          <AttributeID>Indicador Ingreso Dia Restriccion</AttributeID>
+          <Name>Indicador Ingreso Dia Restriccion</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4aaf30fa-02de-4f85-81d0-69d0b4e4c49c">
+          <AttributeID>Indicador Salio Dia Restriccion</AttributeID>
+          <Name>Indicador Salio Dia Restriccion</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="83e2b387-e764-46d2-9dd6-02ae5dd62284">
+          <AttributeID>Indicador Estrato Cantidad Minutos Automovil Estacionado</AttributeID>
+          <Name>Indicador Estrato Cantidad Minutos Automovil Estacionado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6d6549bc-a096-4482-8004-35ef48b130c7">
+          <AttributeID>Indicador Estrato Hora Entro Automovil Al Estacionamiento</AttributeID>
+          <Name>Indicador Estrato Hora Entro Automovil Al Estacionamiento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65d9311c-93d4-4ab8-aa53-58020479a501">
+          <AttributeID>Indicador Estrato Hora Salio Automovil Al Estacionamiento</AttributeID>
+          <Name>Indicador Estrato Hora Salio Automovil Al Estacionamiento</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1260b407-7a91-42a8-bcc7-a01a43f9d313">
+          <AttributeID>Indicador Estrato Ganancia Obtenida Colones</AttributeID>
+          <Name>Indicador Estrato Ganancia Obtenida Colones</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7cfffede-4dae-458c-a2c9-c312757779a8">
+          <AttributeID>ID Vehiculo</AttributeID>
+          <Name>ID Vehiculo</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2dc4cc8-2db5-4f54-8201-906d0b7ce4c3">
+          <AttributeID>ID Parqueo</AttributeID>
+          <Name>ID Parqueo</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6864e63d-776c-4b95-8527-87294af87085">
+      <ID>Indicador Automovil Salida</ID>
+      <Name>Indicador Automovil Salida</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="74371113-8f3b-4805-924e-a1ef068dd3e2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53927fbb-b67c-4dc7-8c4c-58ff234bb0a0">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorAutomovilSalida</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="40d3feb6-8596-49c7-8e28-e2d2e902f7cd">
+      <ID>Indicador Ingreso Dia Restriccion</ID>
+      <Name>Indicador Ingreso Dia Restriccion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6baf6d4-ad1b-4e10-8e65-4c0ae7d73cf4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c7fc099-a3af-4e8c-be18-6d19d5348fc7">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorIngresoDiaRestriccion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7aab98fa-d6f6-453a-a372-c65301f840be">
+      <ID>Indicador Salio Dia Restriccion</ID>
+      <Name>Indicador Salio Dia Restriccion</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="988b9f1a-5470-4879-a577-813a97c44406">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e71e366-b867-462c-bd18-2cf52e846f57">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorSalioDiaRestriccion</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fe06832-7cab-4a40-8e88-18323dcb4694">
+      <ID>Indicador Estrato Cantidad Minutos Automovil Estacionado</ID>
+      <Name>Indicador Estrato Cantidad Minutos Automovil Estacionado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e4ffff77-18b8-4964-b86f-148ec3727b89">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4ee32c5-2211-467d-8e4f-5f0f41612e3f">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorEstratoCantidadMinutosAutomovilEstacionado</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="288a6776-97e4-498c-9938-6de5052c9cb6">
+      <ID>Indicador Estrato Hora Entro Automovil Al Estacionamiento</ID>
+      <Name>Indicador Estrato Hora Entro Automovil Al Estacionamiento</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b11f92ba-5438-4182-9d2c-74f52d495344">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d99e5ae1-5c7b-41b8-879c-4479bb60cd9e">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorEstratoHoraEntroAutomovilAlEstacionamiento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e8655d8d-c95d-4f07-9729-988e80140160">
+      <ID>Indicador Estrato Hora Salio Automovil Al Estacionamiento</ID>
+      <Name>Indicador Estrato Hora Salio Automovil Al Estacionamiento</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66905c29-3378-4f91-98de-e3f30f0866d6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8d61f90-96b9-4e64-8555-100f57811a52">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorEstratoHoraSalioAutomovilAlEstacionamiento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="483f6ac7-1abd-4e01-a068-64ec88739c90">
+      <ID>Indicador Estrato Ganancia Obtenida Colones</ID>
+      <Name>Indicador Estrato Ganancia Obtenida Colones</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cda1911c-0039-4db5-a3bb-a609c471e40d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="831df8db-c5cb-4d8b-9161-21eb8256dd7f">
+            <TableID>dbo_FactEstacionamiento</TableID>
+            <ColumnID>IndicadorEstratoGananciaObtenidaColones</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61e106ca-c599-4165-a252-3309f9525a39">
+      <ID>ID Vehiculo</ID>
+      <Name>ID Vehiculo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e76c6be-703f-445b-b377-d0dfa45abe8f">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="382aa5d4-20d1-4045-8f70-71c6400628f2">
+            <TableID>dbo_DimVehiculo</TableID>
+            <ColumnID>IDVehiculo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a2a560c8-865c-4eef-a7d6-45a05329b227">
+          <AttributeID>Dia Mes Feriado</AttributeID>
+          <Name>Dia Mes Feriado</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0922ae37-3f17-49ca-9e00-7af0c8f7ffac">
+      <ID>Dia Mes Feriado</ID>
+      <Name>Dia Mes Feriado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b5214c7-c370-4192-9f7c-fc667a52cade">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="547f83cf-7269-487d-acc9-b161b21526ea">
+            <TableID>dbo_DimDiaFeriado</TableID>
+            <ColumnID>DiaMesFeriado</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="93f3e01f-3857-4dba-8164-3541d57b8717">
+      <ID>ID Parqueo</ID>
+      <Name>ID Parqueo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6709ce7-d7e0-488a-b443-14658000a11a">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df1b4a8f-0fdb-4b28-8d58-0e1c7a50879b">
+            <TableID>dbo_DimParqueo</TableID>
+            <ColumnID>IDParqueo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="54968165-b2ce-4ead-88d1-a755f066e0fc">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy1</Name>
+      <Levels>
+        <Level dwd:design-time-name="cdd4380c-91f9-416a-9538-3579f355d6f5">
+          <ID>Indicador Automovil Entrada</ID>
+          <Name>Indicador Automovil Entrada</Name>
+          <SourceAttributeID>Indicador Automovil Entrada</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ab4e53f5-1649-40cf-8087-bd22fdfb3ee2">
+          <ID>Indicador Estrato Hora Salio Automovil Al Estacionamiento</ID>
+          <Name>Indicador Estrato Hora Salio Automovil Al Estacionamiento</Name>
+          <SourceAttributeID>Indicador Estrato Hora Salio Automovil Al Estacionamiento</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ac37641e-c979-4338-a4a4-afc86c8352c2">
+          <ID>Indicador Estrato Ganancia Obtenida Colones</ID>
+          <Name>Indicador Estrato Ganancia Obtenida Colones</Name>
+          <SourceAttributeID>Indicador Estrato Ganancia Obtenida Colones</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0c7f9d05-f656-42f0-9016-f9b16eb568fe">
+          <ID>Indicador Automovil Salida</ID>
+          <Name>Indicador Automovil Salida</Name>
+          <SourceAttributeID>Indicador Automovil Salida</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a7d3ebde-736a-4ae0-bbc3-4558c4894be3">
+          <ID>Indicador Estrato Hora Entro Automovil Al Estacionamiento</ID>
+          <Name>Indicador Estrato Hora Entro Automovil Al Estacionamiento</Name>
+          <SourceAttributeID>Indicador Estrato Hora Entro Automovil Al Estacionamiento</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cf5c806b-0abb-4216-a61b-361c8364163e">
+          <ID>Indicador Ingreso Dia Restriccion</ID>
+          <Name>Indicador Ingreso Dia Restriccion</Name>
+          <SourceAttributeID>Indicador Ingreso Dia Restriccion</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5283c5bd-e9cb-46c5-abe2-e82bd2b9ea2c">
+          <ID>Indicador Estrato Cantidad Minutos Automovil Estacionado</ID>
+          <Name>Indicador Estrato Cantidad Minutos Automovil Estacionado</Name>
+          <SourceAttributeID>Indicador Estrato Cantidad Minutos Automovil Estacionado</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="89cdf673-f894-45ac-958b-0c5b5353a86b">
+          <ID>Indicador Salio Dia Restriccion</ID>
+          <Name>Indicador Salio Dia Restriccion</Name>
+          <SourceAttributeID>Indicador Salio Dia Restriccion</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

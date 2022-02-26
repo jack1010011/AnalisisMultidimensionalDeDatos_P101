@@ -1,0 +1,313 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="48c37507-fc1e-421d-a517-593f7b72beed" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW Examen Analisis</ID>
+  <Name>DW Examen Analisis</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="c988bb14-be27-43bd-85c8-1a6bb9451edb">
+      <ID>Dim Vehiculo</ID>
+      <Name>Dim Vehiculo</Name>
+      <DimensionID>Dim Vehiculo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d89f90ce-8956-4031-991c-515a78047217">
+          <AttributeID>ID Vehiculo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94050b88-efe6-4d57-9c0f-2874671341fc">
+          <AttributeID>Indicador EAFA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9ae4efe2-d246-4691-af06-4501d621806f">
+      <ID>Dim Parqueo</ID>
+      <Name>Dim Parqueo</Name>
+      <DimensionID>Dim Parqueo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bc53c800-f6e0-41d2-9175-c68e0bfe4df7">
+          <AttributeID>ID Parqueo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="00067171-5af7-4d9e-9472-194699f6d430">
+      <ID>Indicador Automovil Dia Feriado Entrada</ID>
+      <Name>Indicador Automovil Dia Feriado Entrada</Name>
+      <DimensionID>Dim Dia Feriado</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="910e362b-fdc4-469b-8baa-e0ad687294e1">
+          <AttributeID>Dia Mes Feriado</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="816b5950-4a2e-43fb-8ef3-9cae05702017">
+      <ID>Indicador Automovil Dia Feriado Salida</ID>
+      <Name>Indicador Automovil Dia Feriado Salida</Name>
+      <DimensionID>Dim Dia Feriado</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="61aaa926-87f4-406b-b41a-fab9c8e18806">
+          <AttributeID>Dia Mes Feriado</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3b92bfc6-d662-4ac5-bd4a-7efcbdd3c0f1">
+      <ID>Dim Vehiculo - Indicador EAFA</ID>
+      <Name>Dim Vehiculo - Indicador EAFA</Name>
+      <DimensionID>Dim Dia Feriado</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0817eca4-6492-4f66-8a84-c0e73c0d2815">
+          <AttributeID>Dia Mes Feriado</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="68967941-14da-4fea-b747-02802144c988">
+      <ID>Fact Estacionamiento</ID>
+      <Name>Fact Estacionamiento</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="38594b24-587e-4635-813e-47779773c53f">
+          <ID>Tarifa Base</ID>
+          <Name>Tarifa Base</Name>
+          <Source dwd:design-time-name="fc4752d0-3e3c-4423-9c66-83b7e06018e1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5cdfe8b5-617d-4351-ab7c-5763242a842f">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>TarifaBase</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="81ff2e14-1582-402e-81d3-aad18a485b66">
+          <ID>Ganancia</ID>
+          <Name>Ganancia</Name>
+          <Source dwd:design-time-name="7f87e0bb-e483-4154-943c-af40696ce708">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d2d54345-60d8-4c4f-8504-e00896372258">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>Ganancia</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f6805ba7-2c15-4259-9360-9a67c04163ae">
+          <ID>Mantenimiento</ID>
+          <Name>Mantenimiento</Name>
+          <Source dwd:design-time-name="6b1c787e-5266-4543-915c-5f704fcd0d8e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="da613621-0ce1-4b94-a214-98e41a213720">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>Mantenimiento</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="72834ac6-e908-44a0-b07f-209fc43b8189">
+          <ID>Imp Ventas</ID>
+          <Name>Imp Ventas</Name>
+          <Source dwd:design-time-name="8302bbc6-c80f-44a8-9ca7-598b9a013f26">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b033896a-b023-4b76-8ccb-a9715de8bde6">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>ImpVentas</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="72b758a7-68e1-4ccb-9151-44bc76393eab">
+          <ID>Total A Cobrar</ID>
+          <Name>Total A Cobrar</Name>
+          <Source dwd:design-time-name="351ec9bf-c1fa-474b-a0c5-e4b24a132316">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b02d7670-c4ae-4a4e-8609-c3f881c93c81">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>TotalACobrar</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9203fd4e-608f-4d2a-bcf8-0d972191adec">
+          <ID>Monto Real Cobrado</ID>
+          <Name>Monto Real Cobrado</Name>
+          <Source dwd:design-time-name="a20b366c-8c45-4de0-acca-279a8615bc91">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6d6e9012-f440-4bb2-a794-ee8f65dc3331">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>MontoRealCobrado</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e8d3de7e-c77b-4428-a969-779de1b22bd9">
+          <ID>Diferencia De Montos</ID>
+          <Name>Diferencia De Montos</Name>
+          <Source dwd:design-time-name="1b2f2dd3-14a3-4816-82ea-1cfd695f420f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="71f66a8a-a375-455d-8a49-612b24514a5d">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>DiferenciaDeMontos</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b84c1643-9b6f-40f9-b783-e2630f049154">
+          <ID>Porcentaje Ganancia</ID>
+          <Name>Porcentaje Ganancia</Name>
+          <Source dwd:design-time-name="2ab6f078-5eea-4308-9f13-5862c42cf8b4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9bcfe89f-49c2-44b8-b71a-9652784195e7">
+              <TableID>dbo_FactEstacionamiento</TableID>
+              <ColumnID>PorcentajeGanancia</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1612e364-ea85-4c34-813f-7d44040f519b">
+          <ID>Fact Estacionamiento Count</ID>
+          <Name>Fact Estacionamiento Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2e1735d7-d1a7-49ef-94e7-c2602c904e43">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="646ed1f4-c487-449e-9a40-f2a8f61195ef">
+              <TableID>dbo_FactEstacionamiento</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="433d139f-9e31-4ee6-be7e-f771374ff83d">
+          <CubeDimensionID>Dim Vehiculo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="84829886-1513-4ef4-bc1a-ec17fd43afd0">
+              <AttributeID>ID Vehiculo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="48dac134-9f4d-4dcb-af6e-6be85d8f048f">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62f27359-af42-4d39-b109-ba9ec413b696">
+                    <TableID>dbo_FactEstacionamiento</TableID>
+                    <ColumnID>IDVehiculo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0690daa7-21e3-4778-b13a-8c1128e01de7">
+          <CubeDimensionID>Dim Parqueo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="31e67dba-2b82-48ec-a03f-a402f2afdbb7">
+              <AttributeID>ID Parqueo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d10a922a-1739-4773-889a-f340455e42bc">
+                  <DataType>WChar</DataType>
+                  <DataSize>100</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce580e68-2284-4783-a235-02c0284a6eb1">
+                    <TableID>dbo_FactEstacionamiento</TableID>
+                    <ColumnID>IDParqueo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9b91fb2a-5536-49a4-a1c1-6f448284a26f">
+          <CubeDimensionID>Indicador Automovil Dia Feriado Entrada</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="716ea0dc-267c-4a19-860e-561662be7ba8">
+              <AttributeID>Dia Mes Feriado</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5bbf7dae-e6e7-4e93-b538-38e44fa1c717">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5280fd56-9c5b-470a-b43d-41215d368637">
+                    <TableID>dbo_FactEstacionamiento</TableID>
+                    <ColumnID>IndicadorAutomovilDiaFeriadoEntrada</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="df6c18ff-7cd8-446d-b77b-f51ae1bef2c3">
+          <CubeDimensionID>Indicador Automovil Dia Feriado Salida</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0f485010-522c-489f-bf90-86a85af9f1bb">
+              <AttributeID>Dia Mes Feriado</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6fe09a52-d716-4cc8-a223-f9a26e505564">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4d634cbf-3509-45d5-80ac-b509264a3d6a">
+                    <TableID>dbo_FactEstacionamiento</TableID>
+                    <ColumnID>IndicadorAutomovilDiaFeriadoSalida</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="1af9523a-bc85-4d26-914e-47b618589d9e">
+          <CubeDimensionID>Dim Vehiculo - Indicador EAFA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4906b385-1ce1-4a31-9b4c-1854fd3bca59">
+              <AttributeID>Dia Mes Feriado</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Dim Vehiculo</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Indicador EAFA</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="6ad3481f-5727-4caa-a305-45f714ca3469">
+    <DataSourceViewID>DW Examen Analisis</DataSourceViewID>
+  </Source>
+</Cube>

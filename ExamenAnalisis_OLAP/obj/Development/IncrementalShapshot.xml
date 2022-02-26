@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ExamenAnalisis_OLAP</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>5aabNEEanOUPLHnG7ns7yU7rAQ4=26/2/2022 04:03:5526/2/2022 04:03:55</TimeStamp>
+        <ID>
+          <String>DW Examen Analisis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>TqWTmv5pLe+FO/NaJCIA6F/xyKo=26/2/2022 05:15:5326/2/2022 04:05:07</TimeStamp>
+        <ID>
+          <String>DW Examen Analisis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gHJru9TBkVlHHbAD+kwk/lOOuvs=26/2/2022 05:21:3226/2/2022 05:21:32</TimeStamp>
+        <ID>
+          <String>Dim Vehiculo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NjNGBwLG5jdW1SnH1xe/zZ3URhI=26/2/2022 05:21:3226/2/2022 05:21:32</TimeStamp>
+        <ID>
+          <String>Dim Parqueo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MItd06XyIlFIhhmvK4k4WJUtsUQ=26/2/2022 05:21:3226/2/2022 05:21:32</TimeStamp>
+        <ID>
+          <String>Dim Dia Feriado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vBHkyaBU9LEonKRU1pXPvKsMtu0=26/2/2022 05:42:3726/2/2022 05:33:08</TimeStamp>
+        <ID>
+          <String>Fact Estacionamiento</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>qmNMhrc3gKSBX+TtMVu3ZHlcRik=26/2/2022 05:21:3226/2/2022 05:21:32xh22RWDQOp+vFinhTq5xQQijKOI=26/2/2022 05:21:3226/2/2022 05:21:32</TimeStamp>
+        <ID>
+          <String>DW Examen Analisis</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>EIlXRr2/FCoLc7O7LbnSD4ICWlI=26/2/2022 04:01:4226/2/2022 04:01:42</TimeStamp>
+      <ID>
+        <String>ExamenAnalisis_OLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-02-26T11:42:39.336667Z</LastDeployed>
+</DeploymentSnapshot>
