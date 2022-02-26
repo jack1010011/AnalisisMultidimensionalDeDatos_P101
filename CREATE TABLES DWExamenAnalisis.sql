@@ -12,7 +12,8 @@ if TYPE_ID(N'Name') IS NOT NULL
 -- CREO LA TABLA DE DimParqueo--
 use DWExamenAnalisis
 CREATE TABLE [dbo].[DimParqueo](
-		
+		[IDParqueo] [dbo].[Name],
+		[IDConsecutivoDistrito] [dbo].[Name],
 		[NombreDistrito] [dbo].[Name],
 		[NombreCanton] [dbo].[Name],
 		[NombreProvincia] [dbo].[Name]
@@ -24,7 +25,10 @@ GO
 -- CREO LA TABLA DE DimVehiculo--
 use DWExamenAnalisis
 CREATE TABLE [dbo].[DimVehiculo](
---	[IndicadorEAFA] [nvarchar](50),
+	[IDVehiculo] [dbo].[Name],
+	[IDFabricante] [dbo].[Name],
+	[IDTipoVehiculo] [dbo].[Name],
+	[Placa] [dbo].[Name],
 	[NombreTipoVehiculo] [dbo].[Name],
 	[NombreFabricante] [dbo].[Name],
 	[NombrePaisFabricante] [dbo].[Name],
@@ -52,6 +56,8 @@ GO
 -- CREO LA TABLA FactEstacionamiento --
 use DWExamenAnalisis
 CREATE TABLE [dbo].[FactEstacionamiento](
+		[IDParqueo] [dbo].[Name],
+		[IDVehiculo] [dbo].[Name],
 		--Estacionamiento--
 		[TarifaBase] [money],
 		[Ganancia] [money],
@@ -74,6 +80,9 @@ CREATE TABLE [dbo].[FactEstacionamiento](
 		[IndicadorEstratoHoraEntroAutomovilAlEstacionamiento] [nvarchar](50),
 		[IndicadorEstratoHoraSalioAutomovilAlEstacionamiento] [nvarchar](50),
 		[IndicadorEstratoGananciaObtenidaColones] [nvarchar](50),
+		[MontoRealCobrado] [money],
+		[DiferenciaDeMontos] [money],
+		[PorcentajeGanancia] [money]
 )
 GO
 
@@ -89,3 +98,14 @@ CREATE TABLE [dbo].[DimDiaFeriado](
 	--[NombreFeriado] [nvarchar](70)
 )
 GO
+
+
+-- LISTA --
+-- CREO LA TABLA DE DimVehiculo--
+--use DWExamenAnalisis
+--CREATE TABLE [dbo].[FactMontosPagos](
+--	[MontoRealCobrado] [money],
+--	[DiferenciaDeMontos] [money],
+--	[TotalACobrar] [money],
+--)
+--GO
